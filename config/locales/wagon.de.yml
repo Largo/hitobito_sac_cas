@@ -176,6 +176,10 @@ de:
           m: Mann
           w: Frau
           _nil: Andere
+        digital_pass: Mitgliederausweis
+        digital_passes:
+          true: digital
+          false: print
       group:
         group_id: Gruppen-ID
         navision_id: NAV Sektions-ID

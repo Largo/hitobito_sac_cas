@@ -1,0 +1,4 @@
+= field_set_tag do
+  = f.labeled(:digital_pass) do
+    - Person::DIGITALPASSES.each do |key|
+      = f.inline_radio_button(:digital_pass, key, entry.digital_pass_label(key.to_s))

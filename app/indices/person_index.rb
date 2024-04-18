@@ -9,4 +9,5 @@ module PersonIndex; end
 
 ThinkingSphinx::Index.define_partial :person do
   indexes id
+  indexes digital_pass
 end

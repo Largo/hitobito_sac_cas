@@ -11,6 +11,8 @@ module SacCas::PeopleController
   LOOKUP_PREFIX = 'people/neuanmeldungen'
 
   prepended do
+    self.permitted_attrs += [:digital_pass]
+
     before_action :set_lookup_prefixes
   end
 

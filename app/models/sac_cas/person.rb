@@ -11,6 +11,10 @@ module SacCas::Person
 
   included do
     Person::INTERNAL_ATTRS << :membership_verify_token
+    Person::PUBLIC_ATTRS << :digital_pass
+    DIGITALPASSES = [true, false].freeze
+    i18n_enum :digital_pass, DIGITALPASSES
+    i18n_setter :digital_pass, DIGITALPASSES
 
     Person::LANGUAGES.delete(:en)
 
